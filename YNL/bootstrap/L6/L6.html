@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>You not Lonely</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style>
+.fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+  .test{
+    text-align : center
+  }
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\main.html">Y N L</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">홈</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\inquiry.html">문의</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\list.html">상담중인 목록</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\list.html">All</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L1\L1.html">고민상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L2\L2.html">비밀상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L3\L3.html">육아상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L4\L4.html">학업상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L5\L5.html">공모전</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L6\L6.html">진로상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L7\L7.html">외모상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L8\L8.html">인간관계</a></li>
+          </ul>
+        </div>
+      </div>
+
+  </nav>
+
+  <div class = "test">
+  <h3>You Not Lonely, <em>당신은 고민 상담가인 동시에 상담 전문가 입니다.</em></h3>
+  <p> 당신의 한 마디가 응원이 될 수 있으며 동시에 좌절을 만들 수 있습니다. 신중해주세요</p>
+  <h1></h1>
+</div>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+ <table id="myTable">
+   <tr class="header">
+     <th style="width:30%;">제목</th>
+     <th style="width:30%;">상담 진행상태</th>
+     <th style="width:20%;">분류</th>
+     <th style="width:20%;">아이디</th>
+   </tr>
+   <tr>
+     <td>Alfreds Futterkiste</td>
+     <td>O</td>
+     <td>이것저것</td>
+     <td>첫번째</td>
+     <td>
+   </tr>
+   <tr>
+     <td>Berglunds snabbkop</td>
+     <td>Need</td>
+     <td>심심해서</td>
+     <td>두번째</td>
+   </tr>
+   <tr>
+     <td>Island Trading</td>
+     <td>O</td>
+     <td>섞었어</td>
+     <td>육아상담</td>
+   </tr>
+   <tr>
+     <td>Koniglich Essen</td>
+     <td>Need</td>
+     <td>필요한것</td>
+     <td>인간관계</td>
+   </tr>
+   <tr>
+     <td>Laughing Bacchus Winecellars</td>
+     <td>O</td>
+     <td>비밀상담</td>
+     <td>다섯번째</td>
+   </tr>
+   <tr>
+     <td>Magazzini Alimentari Riuniti</td>
+     <td>O</td>
+     <td>고민상담</td>
+     <td>여섯번째</td>
+   </tr>
+   <tr>
+     <td>North/South</td>
+     <td>Need</td>
+     <td>공모전</td>
+     <td>일곱번째</td>
+   </tr>
+   <tr>
+     <td>Paris specialites</td>
+     <td>Need</td>
+     <td>외모상담</td>
+     <td>여덟번째</td>
+   </tr>
+ </table>
+
+ <script>
+ function myFunction() {
+   var input, filter, table, tr, td, i;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   table = document.getElementById("myTable");
+   tr = table.getElementsByTagName("tr");
+   for (i = 0; i < tr.length; i++) {
+     td = tr[i].getElementsByTagName("td")[0];
+     if (td) {
+       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+         tr[i].style.display = "";
+       } else {
+         tr[i].style.display = "none";
+       }
+     }
+   }
+ }
+ </script>
+ <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+   <a href="#"><i class="fa fa-facebook-official"></i></a>
+   <a href="#"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#"><i class="fa fa-twitter"></i></a>
+   <a href="#"><i class="fa fa-flickr"></i></a>
+   <a href="#"><i class="fa fa-linkedin"></i></a>
+   <p class="w3-medium">
+     © 2018 All Rights Reserved. You Not Lonely Sw Team | 서비스 약관 | 개인정보 보호 | 결제 이용 약관 | 도움말 | 광고 문의 | 대회 개최 문의 | 업데이트 노트
+   </p>
+   <p class="w3-medium">
+     대회 등록 번호: xxx - xxx - xxx
+   </p>
+   <p class="w3-medium">
+     대표자명: You not Lonely Develop Team
+   </p>
+   <p class="w3-medium">
+     주소: 서울시 동작구 상도동 상도로 369 숭실대학교
+   </p>
+ </footer>
+</body>
+</html>
