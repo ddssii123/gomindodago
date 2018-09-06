@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>You not Lonely</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel= "stylesheet" type="text/css" href="C:\Users\User\Desktop\YNL\bootstrap\list.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\main.html">Y N L</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">홈</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\inquiry\inquiry.html">문의</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\list\list.html">상담중인 목록</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">회원 정보</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">All</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L1\L1.html">고민상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L2\L2.html">비밀상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L3\L3.html">육아상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L4\L4.html">학업상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L5\L5.html">공모전</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L6\L6.html">진로상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L7\L7.html">외모상담</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\L8\L8.html">인간관계</a></li>
+          </ul>
+        </div>
+      </div>
+
+  </nav>
+  <div class="container">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="검색어를 입력해주세요."
+    style="width:100%; height: 40px; padding-left: 10px; margin-bottom: 30px; outline: none;">
+
+    <table class="table table-hover" id="myTable">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>날짜</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <?php
+        echo "hell";
+          $conn = mysqli_connect("localhost", "root", "wjddma0727", "project");
+          if (mysqli_connect_error()) {
+            echo ("Failed to connect to MySQL: " . mysqli_connect_error());
+          }
+
+          $query = mysqli_query($conn, "SELECT * FROM post_list");
+
+          while ($row = mysqli_fetch_array($query)){
+            echo "<tr>";
+            echo "<td>" . $row['번호'] . "</td>";
+            echo "<td>" . $row['제목'] . "</td>";
+            echo "<td>" . $row['작성자'] . "</td>";
+            echo "<td>" . date('F d, Y', strtotime($row['날짜'])) . "</td>";
+            echo "<td>" . $row['조회수'] . "</td>";
+            echo "<tr>";
+          }
+
+          mysqli_close($conn);
+        ?> -->
+        <tr>
+          <td>8</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">너무 공부가 하기 싫어요</a></td>
+          <td>hatest666</td>
+          <td>2018-08-27</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">왕따인 것 같아요..</a></td>
+          <td>12togge31</td>
+          <td>2018-08-12</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">여자친구가 너무 미워요</a></td>
+          <td>candoit</td>
+          <td>2018-08-03</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">아무리 생각해도 못생긴 것 같아요.</a></td>
+          <td>wanchan0631</td>
+          <td>2018-07-30</td>
+          <td>57</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">꿈 vs 현실</a></td>
+          <td>zeojf332</td>
+          <td>2018-07-22</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">아이가 갑자기 밥을 먹지 않아요</a></td>
+          <td>bbabe0503</td>
+          <td>2018-07-22</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black">서울 아이디어 공모전 팀원 모집합니다!</a></td>
+          <td>one77one</td>
+          <td>2018-07-20</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black">졸업하고 너무 걱정이네요...</a></td>
+          <td>makke345</td>
+          <td>2018-07-18</td>
+          <td>103</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-center">
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+ </script>
+ <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+   <a href="#"><i class="fa fa-facebook-official"></i></a>
+   <a href="#"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#"><i class="fa fa-twitter"></i></a>
+   <a href="#"><i class="fa fa-flickr"></i></a>
+   <a href="#"><i class="fa fa-linkedin"></i></a>
+   <p class="w3-medium">
+     © 2018 All Rights Reserved. You Not Lonely Sw Team | 서비스 약관 | 개인정보 보호 | 결제 이용 약관 | 도움말 | 광고 문의 | 대회 개최 문의 | 업데이트 노트
+   </p>
+   <p class="w3-medium">
+     대회 등록 번호: xxx - xxx - xxx
+   </p>
+   <p class="w3-medium">
+     대표자명: You not Lonely Develop Team
+   </p>
+   <p class="w3-medium">
+     주소: 서울시 동작구 상도동 상도로 369 숭실대학교
+   </p>
+ </footer>
+</body>
+</html>
