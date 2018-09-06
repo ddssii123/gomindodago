@@ -7,116 +7,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel= "stylesheet" type="text/css" href="C:\Users\User\Desktop\YNL\bootstrap\list.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style>
-.fakeimg {
-      height: 200px;
-      background: #aaa;
-  }
-  .test{
-    text-align : center
-  }
-* {
-  box-sizing:border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.container {
-  padding: 64px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-.column-66 {
-  float: left;
-  width: 66.66666%;
-  padding: 20px;
-}
-
-.column-33 {
-  float: left;
-  width: 33.33333%;
-  padding: 20px;
-}
-
-.large-font {
-  font-size: 48px;
-}
-
-.xlarge-font {
-  font-size: 64px
-}
-
-.button {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #4CAF50;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin: auto;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-</style>
-</head>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
 <body>
   <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -131,11 +25,12 @@ img {
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">홈</a></li>
-            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\inquiry.html">문의</a></li>
-            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\list.html">상담중인 목록</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\inquiry\inquiry.html">문의</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\list\list.html">상담중인 목록</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">회원 정보</a></li>
+            <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
       </div>
@@ -147,7 +42,7 @@ img {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\list.html">All</a>
+          <a class="navbar-brand" href="#">All</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -164,68 +59,127 @@ img {
       </div>
 
   </nav>
+  <div class="container">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="검색어를 입력해주세요."
+    style="width:100%; height: 40px; padding-left: 10px; margin-bottom: 30px; outline: none;">
 
-  <div class = "test">
-  <h3>You Not Lonely, <em>당신은 고민 상담가인 동시에 상담 전문가 입니다.</em></h3>
-  <p> 당신의 한 마디가 응원이 될 수 있으며 동시에 좌절을 만들 수 있습니다. 신중해주세요</p>
-  <h1></h1>
-</div>
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table class="table table-hover" id="myTable">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>날짜</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <?php
+        echo "hell";
+          $conn = mysqli_connect("localhost", "root", "wjddma0727", "project");
+          if (mysqli_connect_error()) {
+            echo ("Failed to connect to MySQL: " . mysqli_connect_error());
+          }
 
- <table id="myTable">
-   <tr class="header">
-     <th style="width:30%;">제목</th>
-     <th style="width:30%;">상담 진행상태</th>
-     <th style="width:20%;">분류</th>
-     <th style="width:20%;">아이디</th>
-   </tr>
-   <tr>
-     <td>Alfreds Futterkiste</td>
-     <td>O</td>
-     <td>이것저것</td>
-     <td>첫번째</td>
-     <td>
-   </tr>
-   <tr>
-     <td>Berglunds snabbkop</td>
-     <td>Need</td>
-     <td>심심해서</td>
-     <td>두번째</td>
-   </tr>
-   <tr>
-     <td>Island Trading</td>
-     <td>O</td>
-     <td>섞었어</td>
-     <td>육아상담</td>
-   </tr>
-   <tr>
-     <td>Koniglich Essen</td>
-     <td>Need</td>
-     <td>필요한것</td>
-     <td>인간관계</td>
+          $query = mysqli_query($conn, "SELECT * FROM post_list");
 
-   </tr>
- </table>
+          while ($row = mysqli_fetch_array($query)){
+            echo "<tr>";
+            echo "<td>" . $row['번호'] . "</td>";
+            echo "<td>" . $row['제목'] . "</td>";
+            echo "<td>" . $row['작성자'] . "</td>";
+            echo "<td>" . date('F d, Y', strtotime($row['날짜'])) . "</td>";
+            echo "<td>" . $row['조회수'] . "</td>";
+            echo "<tr>";
+          }
 
- <script>
- function myFunction() {
-   var input, filter, table, tr, td, i;
-   input = document.getElementById("myInput");
-   filter = input.value.toUpperCase();
-   table = document.getElementById("myTable");
-   tr = table.getElementsByTagName("tr");
-   for (i = 0; i < tr.length; i++) {
-     td = tr[i].getElementsByTagName("td")[0];
-     if (td) {
-       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-         tr[i].style.display = "";
-       } else {
-         tr[i].style.display = "none";
-       }
-     }
-   }
- }
- </script>
+          mysqli_close($conn);
+        ?> -->
+        <tr>
+          <td>8</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">너무 공부가 하기 싫어요</a></td>
+          <td>hatest666</td>
+          <td>2018-08-27</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">왕따인 것 같아요..</a></td>
+          <td>12togge31</td>
+          <td>2018-08-12</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">여자친구가 너무 미워요</a></td>
+          <td>candoit</td>
+          <td>2018-08-03</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">아무리 생각해도 못생긴 것 같아요.</a></td>
+          <td>wanchan0631</td>
+          <td>2018-07-30</td>
+          <td>57</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">꿈 vs 현실</a></td>
+          <td>zeojf332</td>
+          <td>2018-07-22</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black;">아이가 갑자기 밥을 먹지 않아요</a></td>
+          <td>bbabe0503</td>
+          <td>2018-07-22</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black">서울 아이디어 공모전 팀원 모집합니다!</a></td>
+          <td>one77one</td>
+          <td>2018-07-20</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><a href="C:\Users\User\Desktop\YNL\bootstrap\post\post.html" style="color:black">졸업하고 너무 걱정이네요...</a></td>
+          <td>makke345</td>
+          <td>2018-07-18</td>
+          <td>103</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-center">
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
    <a href="#"><i class="fa fa-facebook-official"></i></a>
    <a href="#"><i class="fa fa-pinterest-p"></i></a>
