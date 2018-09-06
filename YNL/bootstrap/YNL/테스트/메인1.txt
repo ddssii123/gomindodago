@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>유낫론리~</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+
+    footer {
+      background-color: #222222;
+      padding: 15px;
+
+    }
+
+    .foo-check{
+      color : white;
+    }
+
+
+
+    .column_2 {
+      float: left;
+      width: 24.0%;
+      margin-left: 10px;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .t-container {
+      padding: 80px 120px;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    .cen{
+      text-align: center;
+    }
+    .container1 {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container1 img {
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 111.0);
+    }
+
+    .container1 .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: black;
+        font-size: 20px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: bottom;
+    }
+
+    .container1 .btn:hover {
+        background-color: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+
+    #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+
+    #myTable th, #myTable td {
+      text-align: left;
+      padding: 12px;
+    }
+
+    #myTable tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header, #myTable tr:hover {
+      background-color: #f1f1f1;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+    background-color: #CEF6CE;
+    font-family: Helvetica, sans-serif;
+  }
+  .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: white;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+  }
+  .container3 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.container3::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+}
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+.right::after {
+    left: -16px;
+}
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\main.html">Y N L</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">홈</a></li>
+          <li><a href="C:\Users\User\Desktop\YNL\bootstrap\test.html">문의</a></li>
+          <li><a href="#">----</a></li>
+          <li><a href="#">협찬기관</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active" style="height:450px;">
+          <img src="이미지슬라이더1.jpg" alt="Los Angeles" width="100%" height="100%";>
+        </div>
+
+        <div class="item" style="height:450px;">
+          <img src="test2.jpg" alt="Chicago" width="100%;">
+        </div>
+
+        <div class="item" style="height:450px;">
+          <img src="test3.jpg" alt="New york" width="100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <div class="container text-center">
+    <h3><em>" You Not Lonley ""</em></h3>
+    <h3><em>여러분의 말 못할 고민들 모두 함께 해결할 수 있습니다.</em></h3>
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="container text-center">
+  <h3><em>" 상담목록입니다. 버튼을 클릭해주세요 " </em></h3>
+</div>
+
+<div class="row">
+<div class="column_2">
+  <div class="container1">
+    <img src="고민1.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> 공개 고민 상담 </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민3.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> 비밀 상담 [전문가] </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민4.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> 육아 상담 </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민2.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> 학업 상담 </button>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="column_2">
+  <div class="container1">
+    <img src="고민5.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> 공모전 참여 </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민1.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> - - - </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민1.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> - - - </button>
+  </div>
+</div>
+
+<div class="column_2">
+  <div class="container1">
+    <img src="고민1.jpg" alt="Snow" style="width:100%">
+    <button class="btn"> - - - </button>
+  </div>
+</div>
+</div>
+
+<div class="container text-center">
+  <h3> 현재 진행중인 / 대기중인 상담 목록들입니다. 클릭을 하시면 상담으로 이어질 수 있습니다. </h3>
+</div>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">분류</th>
+    <th style="width:40%;">응답 / 수신자</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+<h1> <h1>
+
+<footer class="container-fluid text-center">
+  <h4 class="foo-check"><em> 여러분들의 고민이 사라지는 그날까지 열심히 뛰겠습니다.</em></h4>
+  <p class="foo-check"><em> 추가 문의사항이 있으신 분들은 아래의 번호로 연락주세요, 010-xxxx-xxxx </em></p>
+</footer>
+
+</body>
+<body>
+  <div class="timeline">
+    <div class="container3 left">
+      <div class="content">
+        <h2> 2018 - 4 </h2>
+        <p> 프로젝트 시작, 팀원 모집 및 팀명 or 아이디어 구상 실시 </p>
+        <p> 개인 별 SoftWare 관련 이슈 및 필요한 어플리케이션</p>
+        <p> 시스템 구상 의논 시작 </p>
+        <p> 시작 멤버 : 김창엽, 현재일, 김주희 </p>
+      </div>
+    </div>
+    <div class="container3 right">
+      <div class="content">
+        <h2> 2018 - 5 </h2>
+        <p> 프로젝트 아이디어 선정 완료 </p>
+        <p> Y N L (You Not Lonely) 아이디어 탄생 </p>
+        <p> 설계도 제작 및 세부 사항 선정 </p>
+        <p> 프로젝트 전문 인원 영입 실시 : 윤성필 (DataBase) </p>
+      </div>
+    </div>
+    <div class="container3 left">
+      <div class="content">
+        <h2> 2018 - 6 </h2>
+        <p> Web Page 제작 실시 </p>
+        <p> 사용언어 : Css , Javascript , JQuery </p>
+        <p> 사용 서버 구상 : Google Cloud , Mongo DB , MySQL, º  º  º  º  º </p>
+      </div>
+    </div>
+    <div class="container3 right">
+      <div class="content">
+        <h2> 2018 - 7 </h2>
+        <p> 사회 이슈화 파악 실시 </p>
+        <p> 대한민국의 자살율 세계 1위 확인 </p>
+        <p> 현대 사회에서의 우울증으로 인한, 공황장애로 인하여 </p>
+        <p> 고통받고 있는 사람들을 위한 웹 어플리케이션 추가 회의 </p>
+        <p> 프로젝트 전문 인원 영입 실시 : 이준형 (Android Application) </p>
+      </div>
+    </div>
+    <div class="container3 left">
+      <div class="content">
+        <h2> 2018 - 8</h2>
+        <p> 제작 / 회의 심의 </p>
+      </div>
+    </div>
+    <div class="container3 right">
+      <div class="content">
+        <h2> 2018 - 9</h2>
+        <p> 서비스 시작 Start ! </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>유낫론리~</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+
+    footer {
+      background-color: #222222;
+      padding: 15px;
+    }
+
+    .foo-check{
+      color : white;
+    }
+    .container {
+      padding: 80px 120px;
+    }
+
+    .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+    }
+
+    .person:hover {
+      border-color: #f1f1f1;
+    }
+
+    .form-wrap {
+      margin: auto;
+      width: 350px;
+    }
+
+    .logo-wrap {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-inline{
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-top: 30px;
+    }
+
+    .prettyline {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="C:\Users\User\Desktop\YNL\bootstrap\main.html">Y N L</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="C:\Users\User\Desktop\YNL\bootstrap\main.html">홈</a></li>
+          <li><a href="C:\Users\User\Desktop\YNL\bootstrap\test.html">문의</a></li>
+          <li><a href="#">----</a></li>
+          <li><a href="#">협찬기관</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="C:\Users\User\Desktop\YNL\bootstrap\join.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+      <hr class="prettyline">
+      <br>
+      <center>
+      <h1><b>안녕하세요</b></h1>
+      <h3>바쁘신 시간을 투자하여 YNL에 들려 주신 분들께 감사합니다.</h3>
+      <em>아래의 로그인 / 회원가입을 통하여 서비스를 이용해주세요.</em>
+      <br>
+    <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
+    </center>
+    <br>
+      <hr class="prettyline">
+   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+          <br>
+          <div class="bs-example bs-example-tabs">
+              <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+                <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
+              </ul>
+          </div>
+        <div class="modal-body">
+          <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade in" id="why">
+          <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
+          <p></p><br> Please contact <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com</a> for any other inquiries.</p>
+          </div>
+          <div class="tab-pane fade active in" id="signin">
+              <form class="form-horizontal">
+              <fieldset>
+              <!-- Sign In Form -->
+              <!-- Text input-->
+              <div class="control-group">
+                <label class="control-label" for="userid">Alias:</label>
+                <div class="controls">
+                  <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+                </div>
+              </div>
+
+              <!-- Password input-->
+              <div class="control-group">
+                <label class="control-label" for="passwordinput">Password:</label>
+                <div class="controls">
+                  <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="control-group">
+                <label class="control-label" for="signin"></label>
+                <div class="controls">
+                  <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                </div>
+              </div>
+              </fieldset>
+              </form>
+          </div>
+
+          <div class="tab-pane fade" id="signup">
+              <form class="form-horizontal">
+              <fieldset>
+              <!-- Sign Up Form -->
+              <!-- Text input-->
+              <div class="control-group">
+                <label class="control-label" for="Email">Phone Number</label>
+                <div class="controls">
+                  <input id="Email" name="Email" class="form-control" type="text" placeholder="010-0000-0000" class="input-large" required="">
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="control-group">
+                <label class="control-label" for="userid">Alias:</label>
+                <div class="controls">
+                  <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                </div>
+              </div>
+
+              <!-- Password input-->
+              <div class="control-group">
+                <label class="control-label" for="password">Password:</label>
+                <div class="controls">
+                  <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                  <em>1-8 Characters</em>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="control-group">
+                <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+                <div class="controls">
+                  <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+
+
+              <!-- Button -->
+              <div class="control-group">
+                <label class="control-label" for="confirmsignup"></label>
+                <div class="controls">
+                  <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                </div>
+              </div>
+              </fieldset>
+              </form>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="agree-mailing"><span class="checked"></span> 소식을 이메일로 받아봅니다.
+                </label>
+              </div>
+
+              <div class="checkbox last">
+                <label>
+                          <input type="checkbox" name="agree-service"><span class="checked"></span> 서비스 약관에 동의합니다.
+                       </label>
+                <a id="show_terms" target="_blank" href="/service" class="text_btn">약관 보기</a>
+              </div>
+        </div>
+      </div>
+        </div>
+        <div class="modal-footer">
+        <center>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="container-fluid text-center">
+    <h2 class="foo-check"> 여러분들의 고민이 사라지는 그날까지 열심히 뛰겠습니다.</h2>
+    <p class="foo-check"> 추가 문의사항이 있으신 분들은 아래의 번호로 연락주세요, 010-xxxx-xxxx </p>
+  </footer>
+
+</body>
+
+</html>
